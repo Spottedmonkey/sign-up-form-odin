@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="logo-container"></div>
+    <div id="form-container">
+      <div id="random-text">
+        <p class="text-one">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up now
+          to get started.
+        </p>
+        <p class="text-two">You <em>know</em> you want to</p>
+      </div>
+      <form action="#" method="post">
+        <div id="input-container">
+          <div class="form-header">
+            <h1>Let's do this!</h1>
+          </div>
+          <div class="first-name" id="form-field">
+            <label for="first-name">First Name</label>
+            <input type="text" name="first_name" id="first-name" />
+          </div>
+          <div class="last-name" id="form-field">
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last_name" id="last-name" />
+          </div>
+          <div class="email" id="form-field">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="phone-number" id="form-field">
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" name="phone_number" id="phone-number" />
+          </div>
+          <div class="password" id="form-field">
+            <label for="password"
+              >Password <span><em>(required)</em></span></label
+            >
+            <input
+              type="password"
+              name="password"
+              id="password"
+              pattern="[\w]{4}-[\w]{4}-[\w]{4}"
+              required
+            />
+            <p>Password format (ex. xxxx-xxxx-xxxx)</p>
+          </div>
+          <div class="conf-password" id="form-field">
+            <label for="conf-password"
+              >Confirm Password <span><em>(required)</em></span></label
+            >
+            <input
+              type="password"
+              name="conf_password"
+              id="conf-password"
+              pattern="[\w]{4}-[\w]{4}-[\w]{4}"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="button-container">
+          <button type="submit">Create Account</button>
+
+          <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
